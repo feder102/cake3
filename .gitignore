@@ -1,4 +1,2 @@
-/tmp/cache/models/*
-/tmp/cache/views/*
-/tmp/cahe/persistent/*
+/tmp/*
 /logs/*
