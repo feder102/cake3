@@ -31,7 +31,7 @@ class PerGenderTable extends Table
         parent::initialize($config);
 
         $this->setTable('per_gender');
-        $this->setDisplayField('per_gender');
+        $this->setDisplayField('value');
         $this->setPrimaryKey('per_gender');
         $this->hasMany('PerPerson',[
         'foreignKey' => 'id_gender'

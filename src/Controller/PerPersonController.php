@@ -61,12 +61,12 @@ class PerPersonController extends AppController
             $this->Flash->error(__('The per person could not be saved. Please, try again.'));
         }
         $PerGender = TableRegistry::get('PerGender');
-        $perGender = $PerGender->find();
+        $perGender = $PerGender->find('list');
         // pr($perGender);
-        foreach ($perGender as $row) {
-            // Each row is now an instance of our Article class.
-            // echo $row->value;
-        }
+        // foreach ($perGender as $row) {
+        //     // Each row is now an instance of our Article class.
+        //     echo $row;
+        // }
         $this->set(compact('perPerson','perGender'));
         $this->set('_serialize', ['perPerson'],['perGender']);
     }

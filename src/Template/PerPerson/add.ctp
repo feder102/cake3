@@ -19,7 +19,7 @@
             echo $this->Form->control('id_doc_type');
             echo $this->Form->control('doc_num');
             echo $this->Form->control('birth_date');
-            echo $this->Form->control('id_gender');
+            echo $this->Form->control('id_gender', array('options'=>$perGender));
             echo $this->Form->control('id_nal');
             echo $this->Form->control('id_marital_status');
             echo $this->Form->control('id_condition');
